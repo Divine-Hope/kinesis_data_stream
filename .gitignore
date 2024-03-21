@@ -1,8 +1,5 @@
-
 .idea/
-
 .terraform/
-
 .venv/
-
 .DS_Store
+*.tfvars
