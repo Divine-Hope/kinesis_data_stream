@@ -16,8 +16,8 @@ variable "kinesis_trigger_config" {
   description = "Kinesis trigger config to invoke lambda"
   type        = map(string)
   default     = {
-    batch_size    = 100
-    max_batch_window = 60
+    batch_size    = 17000 #1M events/hour can emit 17k per minute
+    max_batch_window_in_secs = 60
   }
 }
 
